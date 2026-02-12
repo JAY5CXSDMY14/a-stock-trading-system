@@ -58,20 +58,6 @@ python3 -c "import baostock; bs.login()"
 # 深圳: sz.000001
 ```
 
-## 📊 Cron任务配置
-
-```json
-{
-  "name": "A股市场日报-每日16:00",
-  "schedule": "0 16 * * *",
-  "sessionTarget": "isolated",
-  "payload": {
-    "kind": "agentTurn",
-    "message": "【A股市场日报任务】运行 ~/a-stock-trader/b1b2_analyzer.py"
-  }
-}
-```
-
 ## ✅ 验证步骤
 
 1. 测试baostock连接
@@ -79,4 +65,3 @@ python3 -c "import baostock; bs.login()"
 3. 生成完整日报
 4. 验证定时任务触发
 5. 检查输出格式
-
